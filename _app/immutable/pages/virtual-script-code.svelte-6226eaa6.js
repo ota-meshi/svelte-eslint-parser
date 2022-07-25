@@ -1,0 +1,15 @@
+import{S as L,i as M,s as R,O as V,P as A,l as $,u as F,a as S,x as C,m as y,p as b,v as G,h as m,c as D,y as k,q as E,b as z,G as g,z as q,w as Q,Q as T,f as I,t as O,C as P,R as W,n as j}from"../chunks/index-a927ebcf.js";import{_ as B}from"../chunks/preload-helper-0015abe1.js";import{M as H,_ as J}from"../chunks/svelte-eslint-parser-1b416bbd.js";function K(s){let o,e,c,t,n,i,p,u,d,_;function w(r){s[7](r)}let v={language:"html"};s[0]!==void 0&&(v.code=s[0]),i=new H({props:v}),s[6](i),V.push(()=>A(i,"code",w));let a={code:s[1],language:"typescript",readOnly:!0,editorOptions:{wordWrap:"on"}};return d=new H({props:a}),s[8](d),{c(){o=$("div"),e=$("div"),c=F(s[2]),t=S(),n=$("div"),C(i.$$.fragment),u=S(),C(d.$$.fragment),this.h()},l(r){o=y(r,"DIV",{class:!0});var l=b(o);e=y(l,"DIV",{class:!0});var h=b(e);c=G(h,s[2]),h.forEach(m),t=D(l),n=y(l,"DIV",{class:!0});var f=b(n);k(i.$$.fragment,f),u=D(f),k(d.$$.fragment,f),f.forEach(m),l.forEach(m),this.h()},h(){E(e,"class","ast-tools svelte-116kuo8"),E(n,"class","ast-explorer svelte-116kuo8"),E(o,"class","ast-explorer-root svelte-116kuo8")},m(r,l){z(r,o,l),g(o,e),g(e,c),g(o,t),g(o,n),q(i,n,null),g(n,u),q(d,n,null),_=!0},p(r,[l]){(!_||l&4)&&Q(c,r[2]);const h={};!p&&l&1&&(p=!0,h.code=r[0],T(()=>p=!1)),i.$set(h);const f={};l&2&&(f.code=r[1]),d.$set(f)},i(r){_||(I(i.$$.fragment,r),I(d.$$.fragment,r),_=!0)},o(r){O(i.$$.fragment,r),O(d.$$.fragment,r),_=!1},d(r){r&&m(o),s[6](null),P(i),s[8](null),P(d)}}}function N(s,o,e){let c=!1;B(()=>import("../chunks/index-7e003556.js").then(a=>a.i),["_app/immutable/chunks/index-7e003556.js","_app/immutable/chunks/svelte-eslint-parser-1b416bbd.js","_app/immutable/assets/svelte-eslint-parser-28a70fcf.css","_app/immutable/chunks/index-a927ebcf.js"]).then(a=>{typeof window<"u"&&(window.process||(window.process={cwd:()=>"",env:{}}),window.require.define("@typescript-eslint/parser",a))}).then(()=>{e(5,c=!0)});let t=`<script lang="ts">
+    const array = [1, 2, 3]
+
+    function inputHandler () {
+        // process
+    }
+<\/script>
+
+<input on:input={inputHandler}>
+
+{#each array as e}
+    {@const ee = e * 2}
+    {ee}
+{/each}
+`,n="",i="",p,u;function d(a){const r=Date.now();try{e(1,n=J(a,{parser:"@typescript-eslint/parser"})._virtualScriptCode)}catch(l){console.error(l),e(1,n=`message: ${l.message}`),e(2,i=`${Date.now()-r}ms`);return}e(2,i=`${Date.now()-r}ms`)}function _(a){V[a?"unshift":"push"](()=>{u=a,e(4,u)})}function w(a){t=a,e(0,t)}function v(a){V[a?"unshift":"push"](()=>{p=a,e(3,p)})}return s.$$.update=()=>{s.$$.dirty&33&&c&&d(t)},[t,n,i,p,u,c,_,w,v]}class U extends L{constructor(o){super(),M(this,o,N,K,R,{})}}function X(s){let o,e,c;return e=new U({}),{c(){o=S(),C(e.$$.fragment),this.h()},l(t){W('[data-svelte="svelte-16d0bmo"]',document.head).forEach(m),o=D(t),k(e.$$.fragment,t),this.h()},h(){document.title="Virtual Script Code | svelte-eslint-parser"},m(t,n){z(t,o,n),q(e,t,n),c=!0},p:j,i(t){c||(I(e.$$.fragment,t),c=!0)},o(t){O(e.$$.fragment,t),c=!1},d(t){t&&m(o),P(e,t)}}}const ee=!0;class te extends L{constructor(o){super(),M(this,o,null,X,R,{})}}export{te as default,ee as prerender};
