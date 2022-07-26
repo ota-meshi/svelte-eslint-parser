@@ -548,6 +548,17 @@ export class ScriptLetContext {
     }
   }
 
+  public appendDeclareReactiveVar(assignmentExpression: string): void {
+    this.appendScriptWithoutOffset(
+      `var ${assignmentExpression};`,
+      (node, tokens, comments, result) => {
+        tokens.length = 0;
+        comments.length = 0;
+        removeAllScope(node, result);
+      }
+    );
+  }
+
   private appendScript(
     text: string,
     offset: number,
